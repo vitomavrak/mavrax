@@ -18,7 +18,7 @@
         {{/if}}
         <section class="footer-info">
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
-                <h5 class="footer-info-heading">{{lang 'footer.navigate'}}</h5>
+                <!-- <h5 class="footer-info-heading">{{lang 'footer.navigate'}}</h5> -->
                 <ul class="footer-info-list">
                     {{#each pages}}
                         <li>
@@ -32,7 +32,7 @@
             </article>
 
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
-                <h5 class="footer-info-heading">{{lang 'footer.categories'}}</h5>
+                <!-- <h5 class="footer-info-heading">{{lang 'footer.categories'}}</h5> -->
                 <ul class="footer-info-list">
                     {{#each categories}}
                         <li>
@@ -42,7 +42,7 @@
                 </ul>
             </article>
 
-            {{#and theme_settings.shop_by_brand_show_footer shop_by_brand.length}}
+<!--             {{#and theme_settings.shop_by_brand_show_footer shop_by_brand.length}}
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">
                 <h5 class="footer-info-heading">{{lang 'footer.brands'}}</h5>
                 <ul class="footer-info-list">
@@ -54,11 +54,21 @@
                     <li><a href="{{urls.brands}}">{{lang 'common.view_all'}}</a></li>
                 </ul>
             </article>
-            {{/and}}
+            {{/and}} -->
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-social">
+                <!-- <h5 class="footer-info-heading">{{lang 'footer.brands'}}</h5> -->
+                <ul class="footer-info-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </article>
 
             {{#if settings.address}}
             <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
-                <h5 class="footer-info-heading">{{lang 'footer.info'}}</h5>
+                <!-- <h5 class="footer-info-heading">{{lang 'footer.info'}}</h5> -->
                 <address>{{nl2br settings.address}}</address>
                 {{#if settings.phone_number}}
                     <strong>{{lang 'footer.call_us' phone_number=settings.phone_number}}</strong>
@@ -76,11 +86,6 @@
         {{#if theme_settings.geotrust_ssl_common_name}}
             <div class="footer-geotrust-ssl-seal">
                 {{> components/common/geotrust-ssl-seal}}
-            </div>
-        {{/if}}
-        {{#if theme_settings.show_powered_by}}
-            <div class="footer-copyright">
-                <p class="powered-by">Powered by <a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">BigCommerce</a></p>
             </div>
         {{/if}}
         {{#if theme_settings.show_copyright_footer}}
