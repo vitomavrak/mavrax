@@ -5,6 +5,15 @@
     </div>
 </div>
 {{/if}}
+
+
+<article class="footer-info-col" data-section-type="newsletterSubscription" style="background: #eee; width: 100%;">
+    {{#if settings.show_newsletter_box}}
+        {{> components/common/subscription-form}}
+    {{/if}}
+</article>
+
+
 <footer class="footer" role="contentinfo">
     <div class="container">
         {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}
@@ -25,6 +34,10 @@
                             <a href="{{url}}">{{name}}</a>
                         </li>
                     {{/each}}
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
                     <li>
                         <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
                     </li>
@@ -76,12 +89,11 @@
             </article>
             {{/if}}
 
-            <article class="footer-info-col" data-section-type="newsletterSubscription">
-                {{#if settings.show_newsletter_box}}
-                    {{> components/common/subscription-form}}
-                {{/if}}
+            <article class="footer-info-col footer-info-col--small">
                 {{> components/common/payment-icons}}
             </article>
+            
+
         </section>
         {{#if theme_settings.geotrust_ssl_common_name}}
             <div class="footer-geotrust-ssl-seal">

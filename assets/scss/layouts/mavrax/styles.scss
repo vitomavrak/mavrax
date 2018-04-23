@@ -1,0 +1,86 @@
+// =============================================================================
+// GRID (CSS)
+// =============================================================================
+
+
+/* Globals */
+
+
+/* HEADER SECTION */
+.header {
+	.navUser {
+		border-bottom: 1px solid #eee;
+
+		.navUser-action {
+			font-weight: 300;
+			font-size: 0.95rem;
+			padding: 0.65rem 0.73333rem;
+		}
+
+		.navUser-item-cartLabel {
+			em {
+				//font-size: 20px;
+			}
+		}
+
+	}
+
+	.navPages-action {
+		padding: 1.5rem 1.13333rem 1.5rem;
+		font-weight: 500;
+		color: #000;
+
+		&:hover {
+			opacity: .47;
+		}
+	}
+
+	.header-logo {
+		margin: 14px 0 0 20px;
+		float: left;
+		position: absolute;
+	}
+
+	.form {
+		position: absolute;
+		right: 25px;
+		top: 53px;
+		z-index: 99;
+
+		em {
+			position: absolute;
+			right: 18px;
+			top: 8px;
+			font-size: 20px;
+			opacity: .40;
+		}
+
+	}
+
+}
+
+
+
+/* FOOTER SECTION */
+.footer-copyright {
+	padding: 40px 0 0;
+	text-align: center;
+	opacity: 0.47;
+}
+
+[data-section-type='newsletterSubscription'] {
+	margin: 0;
+	width: 100%;
+	background: #eee;
+	text-align: center;
+	padding: 80px 0;
+
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+
+		.form-field {
+			margin-bottom: 0;
+		}
+	}
+}
