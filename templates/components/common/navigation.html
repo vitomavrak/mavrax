@@ -39,7 +39,7 @@
             {{else}}
                 <a class="navUser-action" href="{{urls.auth.login}}">{{lang 'common.login'}}</a>
                 {{#if settings.account_creation_enabled}}
-                    <span class="navUser-or">{{lang 'common.or'}}</span> <a class="navUser-action" href="{{urls.auth.create_account}}">{{lang 'common.sign_up'}}</a>
+                    <span class="navUser-or">/</span> <a class="navUser-action" href="{{urls.auth.create_account}}">{{lang 'common.sign_up'}}</a>
                 {{/if}}
             {{/if}}
         </li>

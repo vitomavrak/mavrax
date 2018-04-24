@@ -15,11 +15,36 @@
 			font-weight: 300;
 			font-size: 0.95rem;
 			padding: 0.65rem 0.73333rem;
+			text-transform: none;
 		}
 
 		.navUser-item-cartLabel {
 			em {
 				//font-size: 20px;
+			}
+		}
+
+		.navUser-item--cart {
+			position: relative;
+			.navUser-action {
+				padding: 0.4rem 0.73333rem;
+			
+				em {
+					font-size: 20px;
+				}
+			}
+			.countPill {
+				background: #000;
+				color: #fff;
+				display: block;
+				padding-left: 1px;
+				font-size: 11px;
+				position: absolute;
+				right: 5px;
+				top: 8px;
+				width: 16px;
+				height: 16px;
+				line-height: 16px;
 			}
 		}
 
@@ -36,9 +61,13 @@
 	}
 
 	.header-logo {
-		margin: 14px 0 0 20px;
+		margin: 6px 0 0 25px;
 		float: left;
 		position: absolute;
+
+		span {
+			text-transform: none;
+		}
 	}
 
 	.form {
